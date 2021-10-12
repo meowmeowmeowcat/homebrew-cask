@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test:
     runs-on: macos-latest
-    
+
     steps:
       - name: Install cask app
         run: brew install --cask spacelauncher
@@ -17,7 +17,7 @@ jobs:
 
       - name: run app
         working-directory: /Applications/
-        run: open -a "spacelauncher.app"
+        run: open -a "spacelauncher"
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
