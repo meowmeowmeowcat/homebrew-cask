@@ -17,7 +17,7 @@ jobs:
 
       - name: run app
         working-directory: /Applications/
-        run: open -a "spacelauncher"
+        run: open -a "SpaceLauncher.app"
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
