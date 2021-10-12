@@ -6,11 +6,14 @@ jobs:
 
     defaults:
       run:
-        shell: zsh
+        shell: bash
 
     steps:
       - name: Install cask app
         run: brew install --cask spacelauncher
+
+      - name: Show pwd
+        run: pwd
 
       - name: run ls
         working-directory: /Applications/
