@@ -1,0 +1,11 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      - run: brew install -cask spacelauncher
+      - run: open -a spacelauncher
+      - run: brew tap nrlquaker/createzap
+      - run: brew createzap spacelauncher
