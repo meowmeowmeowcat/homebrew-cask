@@ -4,6 +4,10 @@ jobs:
   test:
     runs-on: macos-latest
 
+    defaults:
+      run:
+        shell: zsh
+
     steps:
       - name: Install cask app
         run: brew install --cask spacelauncher
