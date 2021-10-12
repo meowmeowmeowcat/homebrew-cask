@@ -8,7 +8,6 @@ jobs:
         working-directory: ~/Library/Application Support
     steps:
       - name: Install cask app
-        working-directory: ~/
         run: brew install --cask spacelauncher
 
       - name: run ls
@@ -16,7 +15,6 @@ jobs:
         run: ls
 
       - name: tap createzap
-        working-directory: ~/
         run: brew tap nrlquaker/createzap
 
       - name: createzap
