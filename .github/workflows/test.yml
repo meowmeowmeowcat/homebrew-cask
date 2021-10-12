@@ -5,5 +5,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: brew install --cask spacelauncher
+      - run: cd "~/Library/Application Support"
       - run: brew tap nrlquaker/createzap
       - run: brew createzap spacelauncher
