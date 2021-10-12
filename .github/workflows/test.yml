@@ -6,22 +6,11 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask spacelauncher
-
-      - name: Show pwd
-        run: pwd
-
-      - name: run ls
-        working-directory: /Applications/
-        run: ls
-
-      - name: run app
-        working-directory: /Applications/
-        run: open -a "SpaceLauncher.app"
+        run: brew install --cask android-sdk
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: createzap
-        run: brew createzap spacelauncher
+        run: brew createzap android-sdk
 
