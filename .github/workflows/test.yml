@@ -6,5 +6,6 @@ jobs:
     steps:
       - run: brew install --cask spacelauncher
       - run: cd ~/Library/Application\ Support
+      - run: ls
       - run: brew tap nrlquaker/createzap
       - run: brew createzap spacelauncher
