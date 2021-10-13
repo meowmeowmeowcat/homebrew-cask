@@ -6,13 +6,13 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask time-tracker
+        run: brew install --cask kite
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        run: osascript -e "tell application \"Time Tracker\" to activate"
+        run: osascript -e "tell application \"Kite\" to activate"
 
       - name: createzap
-        run: brew createzap time-tracker
+        run: brew createzap kite
