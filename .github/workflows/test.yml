@@ -12,9 +12,7 @@ jobs:
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        working-directory: /Application/
-        run: open -a poedit
+        run: open -a xcode
 
       - name: createzap
         run: brew createzap poedit
-
