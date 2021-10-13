@@ -12,7 +12,7 @@ jobs:
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        run: osascript -e "tell application \"Spyder\" to activate"
+        run: osascript -e "tell application \"Spyder.app\" to activate"
 
       - name: createzap
         run: brew createzap spyder
