@@ -6,13 +6,13 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask kite
+        run: brew install --cask spyder
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        run: osascript -e "tell application \"Kite\" to activate"
+        run: osascript -e "tell application \"Spyder\" to activate"
 
       - name: createzap
-        run: brew createzap kite
+        run: brew createzap spyder
