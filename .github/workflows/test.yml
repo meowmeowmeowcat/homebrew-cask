@@ -6,13 +6,13 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask spyder
+        run: brew install --cask react-native-debugger
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        run: osascript -e "tell application \"Spyder.app\" to activate"
+        run: osascript -e "tell application \"React Native Debugger\" to activate"
 
       - name: createzap
-        run: brew createzap spyder
+        run: brew createzap react-native-debugger
