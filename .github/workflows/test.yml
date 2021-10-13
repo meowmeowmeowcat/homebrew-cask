@@ -12,7 +12,7 @@ jobs:
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        run: osascript -e "tell application \"clock-bar\" to activate"
+        run: osascript -e "tell application \"Clock Bar\" to activate"
 
       - name: createzap
         run: brew createzap clock-bar
