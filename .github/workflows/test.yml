@@ -6,11 +6,11 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask eclipse-installer
+        run: brew install --cask operadriver
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: createzap
-        run: brew createzap eclipse-installer
+        run: brew createzap operadriver
 
