@@ -6,11 +6,11 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask android-sdk
+        run: brew install --cask eclipse-installer
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: createzap
-        run: brew createzap android-sdk
+        run: brew createzap eclipse-installer
 
