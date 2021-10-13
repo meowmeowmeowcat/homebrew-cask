@@ -6,13 +6,13 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask poedit
+        run: brew install --cask clock-bar
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
       - name: Open app
-        run: osascript -e "tell application \"poedit\" to activate"
+        run: osascript -e "tell application \"clock-bar\" to activate"
 
       - name: createzap
-        run: brew createzap poedit
+        run: brew createzap clock-bar
