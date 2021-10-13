@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"Clockify\" to activate"
+        run: osascript -e "tell application \Clockify Desktop.app\" to activate"
 
       - name: createzap
         run: brew createzap clockify
