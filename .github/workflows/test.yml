@@ -6,13 +6,17 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask react-native-debugger
+        run: brew install --cask fedora-media-writer
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
 
+      - name: List
+        working-directory: /Application/
+        run: ls
+
       - name: Open app
-        run: osascript -e "tell application \"React Native Debugger\" to activate"
+        run: osascript -e "tell application \"Fedora Media Writer\" to activate"
 
       - name: createzap
-        run: brew createzap react-native-debugger
+        run: brew createzap fedora-media-writer
