@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask fedora-media-writer
+        run: brew install --cask eclipse-ide
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"Fedora Media Writer\" to activate"
+        run: osascript -e "tell application \"Eclipse\" to activate"
 
       - name: createzap
-        run: brew createzap fedora-media-writer
+        run: brew createzap eclipse-ide
