@@ -12,7 +12,7 @@ jobs:
         run: brew tap nrlquaker/createzap
 
       - name: List
-        working-directory: ~/Application
+        working-directory: /Applications
         run: ls
 
       - name: Open app
