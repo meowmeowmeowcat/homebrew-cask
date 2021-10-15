@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask scratch
+        run: brew install --cask smallpdf
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"Scratch 3.app\" to activate"
+        run: osascript -e "tell application \"Smallpdf.app\" to activate"
 
       - name: createzap
-        run: brew createzap scratch
+        run: brew createzap smallpdf
