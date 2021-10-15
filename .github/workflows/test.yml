@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask dynamic-dark-mode
+        run: brew install --cask scratch
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"Dynamic Dark Mode.app\" to activate"
+        run: osascript -e "tell application \"Scratch.app\" to activate"
 
       - name: createzap
-        run: brew createzap "Dynamic Dark Mode"
+        run: brew createzap scratch
