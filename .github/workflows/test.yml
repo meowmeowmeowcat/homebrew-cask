@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask googleappengine
+        run: brew install --cask tinypng4mac
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"GoogleAppEngineLauncher.app\" to activate"
+        run: osascript -e "tell application \"TinyPNG4Mac.app\" to activate"
 
       - name: createzap
-        run: brew createzap googleappengine
+        run: brew createzap tinypng4mac
