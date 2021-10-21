@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask unity
+        run: brew install --cask runway
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"Unity.app\" to activate"
+        run: osascript -e "tell application \"Runway.app\" to activate"
 
       - name: createzap
-        run: brew createzap unity
+        run: brew createzap runway
