@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask graphiql
+        run: brew install --cask mindforger
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"GraphiQL.app\" to activate"
+        run: osascript -e "tell application \"mindforger.app\" to activate"
 
       - name: createzap
-        run: brew createzap graphiql
+        run: brew createzap mindforger
