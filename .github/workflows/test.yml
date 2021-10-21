@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask fontgoggles
+        run: brew install --cask eclipse-ide
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,7 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"FontGoggles.app\" to activate"
+        run: osascript -e "tell application \"Eclipse.app\" to activate"
 
       - name: createzap
-        run: brew createzap fontgoggles
+        run: brew createzap eclipse-ide
