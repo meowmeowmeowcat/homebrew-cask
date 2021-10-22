@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Install cask app
-        run: brew install --cask eqmac
+        run: brew install --cask flux
 
       - name: tap createzap
         run: brew tap nrlquaker/createzap
@@ -16,7 +16,10 @@ jobs:
         run: ls
 
       - name: Open app
-        run: osascript -e "tell application \"eqmac.app\" to activate"
+        run: osascript -e "tell application \"flux.app\" to activate"
 
       - name: createzap
-        run: brew createzap eqmac
+        run: brew createzap flux
+        
+      - name: Uninstall with zap
+        run: brew uninstall --zap flux
